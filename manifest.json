@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Romanov Weather",
+  "description": "Погода в текущей геолокации",
+  "version": "1.0",
+  "author":"Ra1nbow1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Погода"
+  },
+  "permissions": [
+    "geolocation",
+    "https://ajax.googleapis.com/",
+    "http://gd.geobytes.com/*"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["script/jquery-3.1.1.min.js", "script/jquery-ui.min.js","script/popup.js"],
+      "css": ["css/weather.css","css/weather-icons.min.css","css/jquery-ui.min.css"]
+    }
+  ]
+}

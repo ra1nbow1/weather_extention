@@ -1,0 +1,83 @@
+:root {
+	--gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100%;
+        width:280px;
+        height: 280px;
+        background: #181818;
+        color: #ffffff;
+        /* border: 1px solid #ffffff; */
+}
+
+.weather {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+i {
+    text-align: center;
+    margin-right: 5px;
+    font-size: 50px;
+}
+
+.city {
+    text-align: center;
+    font-weight: bold;
+    text-transform: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    text-align: center;
+    font-size: 20px;
+    font-size: 25px;
+}
+
+.real  {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feelslike {
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.humidity, .pressure, .wind {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.text {
+    font-weight: bold;
+}
+
+a {
+    color: #ffffff;
+    font-size: 10px;
+    margin: 2px;
+}
